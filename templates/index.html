@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Fitness Tracker - Start</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Fitness Tracker</h1>
+    <form method="post">
+        <label>Name: <input type="text" name="name" required></label><br><br>
+        <label>Age: <input type="number" name="age" required></label><br><br>
+        <label>Fitness Level:
+            <select name="level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </label><br><br>
+        <button type="submit">Continue</button>
+    </form>
+</body>
+</html>

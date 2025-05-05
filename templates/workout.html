@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Log Workout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Hi {{ name }}! Log your workout:</h2>
+    <form method="post">
+        <label>Workout Type: <input type="text" name="type" required></label><br><br>
+        <label>Duration (minutes): <input type="number" name="duration" required></label><br><br>
+        <button type="submit">Add Another Workout</button>
+        <button type="submit" name="finish">Finish and View Report</button>
+    </form>
+</body>
+</html>

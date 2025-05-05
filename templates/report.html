@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="report-container">
+        <h1>Fitness Report for {{ user.name }}</h1>
+        <div class="report-info">
+            <p><strong>Age:</strong> {{ user.age }}</p>
+            <p><strong>Total Workouts:</strong> {{ user.workouts | length }}</p>
+            <p><strong>Advice:</strong> {{ user.get_advice() }}</p>
+        </div>
+
+        <ul class="workout-list">
+            {% for workout in user.workouts %}
+            <li>
+                <span class="workout-type">{{ workout.type }}</span>
+                for
+                <span class="workout-duration">{{ workout.duration }} min</span>
+                on
+                <span class="workout-date">{{ workout.date }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <div class="chart-container">
+            <canvas id="workoutChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('workoutChart').getContext('2d');
+        const workoutChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {{ user.workouts | map(attribute='type') | list | tojson }},
+                datasets: [{
+                    label: 'Duration (minutes)',
+                    data: {{ user.workouts | map(attribute='duration') | list | tojson }},
+                    backgroundColor: 'rgba(46, 204, 113, 0.7)',
+                    borderColor: 'rgba(39, 174, 96, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
