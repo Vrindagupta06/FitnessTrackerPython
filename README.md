@@ -22,45 +22,30 @@ Make sure Python 3 is installed on your machine. You can download it from python
 
 Installation
 Clone the repository:
-
-Run the script:
 ![image](https://github.com/user-attachments/assets/164dbf2f-5653-4d76-8e0b-1480f34b7214)
 
-bash
-Copy
-Edit
-python fitness_tracker.py
-📋 How It Works
-Once you run the script, you'll be greeted with a menu like:
+Run the script:
+![image](https://github.com/user-attachments/assets/f52f4471-9657-4294-b84d-0663eff32680)
 
-markdown
-Copy
-Edit
-1. Add calories consumed
-2. Add calories burned
-3. View calorie balance
-4. Exit
-Choose the desired option by entering the corresponding number, and follow the prompts to track your fitness progress!
+## Concepts Demonstrated
+ 1. Variables and data types
 
-🤓 Concepts Demonstrated
-Variables and data types
+ 2. Conditional statements
 
-Conditional statements
+ 3. Loops
 
-Loops
+ 4. Functions
 
-Functions
-
-Basic user input/output
-
-🧠 Ideal For
+ 5. Basic user input/output
+ 
+## Ideal For
 Python beginners
 
 Students learning command-line interfaces
 
 Hobby coders looking to build a simple health-related utility
 
-💡 Future Improvements
+## Future Improvements
 Add data persistence using files or a database
 
 Integrate date-wise tracking
@@ -69,8 +54,8 @@ Build a GUI using Tkinter or PyQt
 
 Add user authentication for multiple profiles
 
-📬 Contributing
+##  Contributing
 Pull requests are welcome! If you'd like to contribute, fork the repo and submit a PR.
 
-📄 License
+##  License
 This project is open-source and available under the MIT License.
