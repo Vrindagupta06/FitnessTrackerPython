@@ -1,8 +1,8 @@
-###Fitness Tracker in Python
+### Fitness Tracker in Python
 
 Welcome to the Fitness Tracker – a simple and interactive Python project that helps users track their fitness activities, including calories burned and consumed. This program is designed to promote healthy habits and personal health tracking using basic Python concepts.
 
-📌 Features
+## Features
 Track calories consumed and burned
 
 Calculate and display net calorie balance
@@ -11,24 +11,20 @@ Menu-driven interface for easy use
 
 Simple and beginner-friendly codebase
 
-🛠️ Technologies Used
+## Technologies Used
 Python 3
 
 Command Line Interface (CLI)
 
-🚀 Getting Started
+## Getting Started
 Prerequisites
 Make sure Python 3 is installed on your machine. You can download it from python.org.
 
 Installation
 Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/Vrindagupta06/FitnessTrackerPython.git
-cd FitnessTrackerPython
 Run the script:
+![image](https://github.com/user-attachments/assets/164dbf2f-5653-4d76-8e0b-1480f34b7214)
 
 bash
 Copy
