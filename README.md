@@ -25,6 +25,7 @@ Clone the repository:
 ![image](https://github.com/user-attachments/assets/164dbf2f-5653-4d76-8e0b-1480f34b7214)
 
 Run the script:
+
 ![image](https://github.com/user-attachments/assets/f52f4471-9657-4294-b84d-0663eff32680)
 
 ## Concepts Demonstrated
