@@ -1,4 +1,5 @@
-🏋️‍♀️ Fitness Tracker in Python
+###Fitness Tracker in Python
+
 Welcome to the Fitness Tracker – a simple and interactive Python project that helps users track their fitness activities, including calories burned and consumed. This program is designed to promote healthy habits and personal health tracking using basic Python concepts.
 
 📌 Features
